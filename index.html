@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link href="design.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>Temperature Convertor</h1>
+            <h3>Please select the temperature you would like to Convert.</h3>
+            <div class="choose">
+                <input type="radio" name="choose" value="celsiustofahrenheit" id="c" checked>
+                <label>Celsius to Fahrenheit</label>
+            </div>
+            <div class="choose">
+                <input type="radio" name="choose" value="fahrenheittocelsius" id="f">
+                <label>Fahrenheit to Celsius</label>
+            </div>
+            <br>
+            &deg;C: <input type="text" name="celsius" placeholder="Temperature in Celsius" id="celsius"><br>
+            <br>
+            &deg;F: <input type="text" name="fahrenheit" placeholder="Temperature in Fahrenheit" id="fahrenheit"
+                disabled><br>
+            <br>
+            <h2 id="result"></h2>
+        </fieldset>
+    </form>
+    <script src="convert.js"></script>
+</body>
+</html>
